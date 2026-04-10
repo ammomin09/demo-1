@@ -1,0 +1,32 @@
+{
+  "name": "react-fullstack-app",
+  "version": "1.0.0",
+  "description": "Full-stack React application with validation and database connection",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "react-hook-form": "^7.45.0",
+    "zod": "^3.21.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.0",
+    "nodemon": "^2.0.20",
+    "concurrently": "^8.0.0"
+  }
+}
